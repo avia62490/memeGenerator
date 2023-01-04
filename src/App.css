@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
 }
 
 .header {
@@ -22,12 +25,40 @@
 }
 
 .header--title {
-  font-size: 20px;
+  font-size: 35px;
   margin-right: auto;
 }
 
 .header--project {
   font-size: 12px;
   font-weight: 500;
+}
+
+.body {
+  padding: 30px;
+}
+
+.input {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 20px;
+}
+
+.input--field {
+  height: 30px;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.input--button {
+  grid-column: 1 / -1;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
 }
 

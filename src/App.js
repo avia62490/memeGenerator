@@ -1,12 +1,12 @@
 import Header from './components/Header.js'
-import Input from './components/Input.js'
+import Body from './components/Body.js'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Input />
+      <Body />
     </div>
   );
 }
