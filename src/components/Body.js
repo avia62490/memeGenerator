@@ -1,7 +1,14 @@
+import memes from '../memesData.js'
+
 export default function Input() {
+    function getMeme() {
+        const number= Math.floor(Math.random() * 100);
+        console.log(memes.data[number].name)
+    }
+
     return(
         <div className="body">
-            <form className="input">
+            <div className="input">
                 <input
                     className="input--field" 
                     type="text" 
@@ -12,8 +19,8 @@ export default function Input() {
                     type="text" 
                     placeholder="Bottom text"
                 />
-                <button className="input--button">Get a new meme image  🖼</button>
-            </form>
+                <button onClick={getMeme} className="input--button">Get a new meme image  🖼</button>
+            </div>
         </div>
     )
 }
