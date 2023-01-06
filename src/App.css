@@ -64,3 +64,8 @@
   cursor: pointer;
 }
 
+.meme {
+  padding: 30px;
+  max-height: 600px;
+  max-width: 600px;
+}
